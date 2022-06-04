@@ -8,8 +8,8 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = (dates, index) => {
-  if (index) {
+const createDate = (dates, index = null) => {
+  if (index != null) {
     return (Date.parse(dates[index]) / 1000).toString();
   } else {
     datesAfterParse = [];
